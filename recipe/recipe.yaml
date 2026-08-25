@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.0.2"
+  version: "2.1.1"
   python_min: "3.11"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/titiler-stacapi/titiler_stacapi-${{ version }}.tar.gz
-  sha256: 848694882bf81ff460de906ff5d749a6aafbdddbedd0889deaf6ee5363369bae
+  sha256: 9ed066d38e9f9fd12044c9de1894869db9c15670e119117112082e463a3fe403
 
 build:
   number: 0
