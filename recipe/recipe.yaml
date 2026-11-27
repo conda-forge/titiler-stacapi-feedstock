@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.0.2"
+  version: "2.3.0"
   python_min: "3.11"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/titiler-stacapi/titiler_stacapi-${{ version }}.tar.gz
-  sha256: 848694882bf81ff460de906ff5d749a6aafbdddbedd0889deaf6ee5363369bae
+  sha256: 17dff115bcd97eb5ae9708e86c59de4489c9760650d06ed5fdca9db68d738d72
 
 build:
   number: 0
@@ -25,9 +25,9 @@ requirements:
   run:
     - python >=${{ python_min }}
     - orjson
-    - titiler-core >=2.0,<2.1
-    - titiler-mosaic >=2.0,<2.1
-    - titiler-extensions >=2.0,<2.1
+    - titiler-core <2.5,>=2.2
+    - titiler-mosaic <2.5,>=2.2
+    - titiler-extensions <2.5,>=2.2
     - pystac-client
     - pydantic >=2.4,<3.0
     - pydantic-settings >=2.0,<3.dev0
